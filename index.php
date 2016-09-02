@@ -71,7 +71,10 @@
 										<input type="text" name="quantR"/>
 										quantitée:<?php echo $_POST['quantR']?>
 										<?php
-											 ;
+											/*
+											 *    /!\ ici on corrige le division by zéro en ajoutant une condition  et tu peux mettre meme un else avec un echo
+											 *
+											 */
 											
 											if($prixR != 0)
 											{
